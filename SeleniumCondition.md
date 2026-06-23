@@ -81,6 +81,11 @@
                       .withTimeout(Duration.ofSeconds(10))
                       .pollingEvery(Duration.ofSeconds(5))
                       .ignoring(NoSuchElementExeption.class);
+ 
+                      Wait<WebDriver> wait = new FluentWait<>(driver)
+                          .withTimeout(Duration.ofSeconds(10))
+                          .pollingEvery(Duration.ofSeconds(3))
+                          .ignoring(NoSuchElementExeption.class);
 
   #### ScreenShot in selenium
   ```
@@ -89,6 +94,10 @@
           File dest =  new File("pic.png");
           FileUtiles.copyFile(src,dest);
 
+          TackScreenshot ts = (TackScreenshot) driver;
+          File src = ts.getSreenshotAs(OutputType.FILE);
+          FIle des = new File("path");
+          FileUtiles.copyFile(sr.dest);
 
   ```
   #### To handle a Muitiple windows

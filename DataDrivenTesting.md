@@ -40,3 +40,6 @@ System.out.println();
         workbook.close();
         fos.close();
 ```
+
+Wait<WebDriver> wait = FluintWait<>(driver)
+        .

@@ -505,7 +505,7 @@ public void checkProfilePage() {
     softAssert.assertAll();   // ← MUST call this at the end
     // If any assertion failed above, the test fails here with ALL errors listed
 }
-```
+``` 
 
 > ⚠️ Always call `softAssert.assertAll()` at the end.
 > Without it, failures are silently ignored and the test will always pass.
@@ -524,6 +524,7 @@ Run tests at the **same time** to save time.
             <class name="com.tests.LoginTest"/>
         </classes>
     </test>
+    
     <test name="FirefoxTest">
         <parameter name="browser" value="firefox"/>
         <classes>
