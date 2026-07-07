@@ -399,4 +399,5 @@ describe('Test suit 1', function(){
 })
 ```
 
-
+# API Testing Using the Cypress
+![alt text](image.png)
